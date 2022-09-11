@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <span class="logo">Proger Shop</span>
+        <input type="search" placeholder="Поиск по сайту">
+    </header>
+
+    <nav>
+        <span class="all">Все</span>
+        <span class="t-shirt">Футболки</span>
+        <span class="cups">Кружки</span>
+        <span class="bags">Сумки</span>
+    </nav>
+
+    <main class="items">
+        
+    </main>
+
+    <aside class="shop-cart-block">
+        <h4>Корзина (<span id="count-items">0</span>) <i class="fas fa-shopping-cart"></i></h4>
+        <div class="titles">
+            <span>Товар</span>
+            <span>Цена</span>
+            <span>Количество</span>
+        </div>
+
+        <div id="shop-cart"></div>
+
+        <button class="clear-all-cart" onclick="clearAll()">Удалить все <i class="fa-solid fa-trash-can"></i></button>
+
+        <button class="go-shop" onclick="makeOrder()">Купить за <b>0.00$</b></button>
+    </aside>
+
+    <button class="shop-cart-button" onclick="showCart()"><i class="fas fa-shopping-cart"></i></button>
+
+    <footer>Все права защищены &copy;</footer>
+
+   <script src="js/index.js"></script>
+   <script src="js/search.js"></script> 
+</body>
+</html>
